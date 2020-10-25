@@ -1,15 +1,13 @@
-<script>
-  $(document).ready(function() {
-    $("button").addClass("animated bounce");
-    $(".well").addClass("animated shake");
-
+ <script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
   });
-</script>
- <div class="col-xs-6">
-      <h4>#left-well</h4>
-      <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#target1</button>
-        <button class="btn btn-default target" id="target2">#target2</button>
-        <button class="btn btn-default target" id="target3">#target3</button>
-      </div>
-    </div>
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+ </script>
+ <p>如果你点击“隐藏” 按钮，我将会消失。</p>
+<button id="hide">隐藏</button>
+<button id="show">显示</button>
